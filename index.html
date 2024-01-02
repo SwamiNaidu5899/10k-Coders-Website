@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10000 Coders | Learn to get into</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        * {
+            font-family: 'Poppins', sans-serif;
+          }
+        .container
+        {
+            height: 180vh;
+            width: 74%;
+            /* background-color: aqua; */
+            position: relative;
+            left: 13%;
+            margin-top: 3vh;
+        }
+        .nav
+        {
+            height: 15vh;
+            width: 100%;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            position: sticky;
+            top: 0vh;
+        }
+        .nav-logo
+        {
+            height: 10vh;
+            width: 20%;
+        }
+        .nav-bar
+        {
+            height: 12vh;
+            width: 74%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 4vh;
+            left: 3%;
+        }
+        .logo-img
+        {
+            height: 10.5vh;
+        }
+        li
+        {
+            list-style: none;
+           
+        }
+        a
+        {
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+        }
+        a:hover{
+            color: rgb(9, 131, 212);
+        }
+        .row-person
+        {
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            margin-top: -4vh;
+           
+        }
+        .col-text
+        {
+            height: 70vh;
+            width: 55%;
+            z-index: -1;
+        }
+        .col-person
+        {
+            height: 70vh;
+            width: 45%;
+            z-index: -1;
+        }
+        span
+        {
+            color: green;
+        }
+        .para-2{
+            font-size: 18px;
+            font-weight: 300;
+            margin: 15px;
+        }
+        button
+        {
+            color: white;
+            background-color: #ff6d00;
+            border: none;
+            padding: 20px;
+            width: 45%;
+            border-radius: 12px;
+            font-weight: bold;
+            margin: 15px;
+        }
+        button:hover
+        {
+            box-shadow: 0 8px 40px 0 rgba(0, 0, 0, .37);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+        }
+        .worried-person-img
+        {
+            height: 68vh;
+            position: relative;
+            left: 7%;
+            top: 5vh;
+        }
+        .fixed-plugin
+        {
+            height: 10vh;
+            width: 28%;
+            /* background-color: rgb(111, 207, 207); */
+            position: relative;
+            left: 82%;
+            top: 85vh;
+            position: fixed;
+        }
+        .pluin-text
+        {
+            height: 10vh;
+            width: 75%;
+            background-color: #fff9f9;
+            position: relative;
+            border-radius: 10px;
+            left: -2%;
+            box-shadow: 10px 10px 10px -1px #9e3030;
+            clip-path: polygon(30% 0%, 83% 0, 83% 28%, 100% 51%, 83% 72%, 82% 100%, 0 100%, 0 0);
+           
+        }
+        .plugin-img
+        {
+            height: 10vh;
+            width: 20%;
+            background-color: #fff;
+            position: relative;
+            top: -9.3vh;
+            left: 45%;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .chat-icon
+        {
+            height: 8vh;
+        }
+        .row2
+        {
+            height: 75vh;
+            width: 100%;
+            margin-top: 10vh;
+            /* background-color: aqua;   */
+        }
+        .row-text
+        {
+            height: 10vh;
+            width: 100%;
+        }
+        .row-Module
+        {
+            height: 60vh;
+            width: 100%;
+            margin-top: 6vh;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .row-text h2
+        {
+            text-align: center;
+            font-weight: 400;
+        }
+        .row-text p
+        {
+            text-align: center;
+            position: relative;
+            top: -2vh;
+            z-index: -1;
+        }
+        .col1,.col2,.col3
+        {
+            height: 55vh;
+            width: 30%;
+            /* background-color: #ff6d00; */
+            border-radius: 12px;
+            border: 1px solid rgb(80, 80, 80);
+        }
+        .col1 h3,.col2 h3,.col3 h3
+        {
+            text-align: center;
+        }
+        .col1 p,.col2 p,.col3 p
+        {
+            text-align: center;
+        }
+        @media screen and (max-width: 430px){
+            *
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .nav-bar
+            {
+                display: none;
+            }
+            .col-person
+            {
+                display: none;
+               
+            }
+            .container
+            {
+                height: 300vh;
+                width: 90%;
+                position: relative;
+                left: 5%;
+            }
+            .row-person
+            {
+                width: 100%;
+            }
+            .col-text
+            {
+                width: 100%;
+                margin-top: 5vh;
+                text-align: left;
+            }
+            .fixed-plugin
+            {
+                height: 10vh;
+                width: 98%;
+                /* background-color: rgb(111, 207, 207); */
+                position: relative;
+                left: 40%;
+                top: 85vh;
+                position: fixed;
+            }
+            button
+            {
+                 color: white;
+                 background-color: #ff6d00;
+                 border: none;
+                 padding: 20px;
+                 width: 86%;
+                  border-radius: 12px;
+                  font-weight: bold;
+                  margin: 15px;
+             }
+             .row2
+             {
+                margin-top: 45vh;
+             }
+            .row-Module
+            {
+                flex-direction: column;
+                height: 150vh;
+                position: relative;
+                top: 2vh;
+                
+            }
+            .col1
+            {
+                width: 100%;
+                height: 50vh;
+                margin-bottom: 4vh;
+            }
+            .col2
+            {
+                width: 100%;
+                height: 50vh;
+                margin-bottom: 4vh;
+            }
+            .col3
+            {
+                width: 100%;
+                height: 50vh;
+                margin-bottom: 4vh;
+            }
+            .row-text p
+            {
+                position: relative;
+                top: 1vh;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav-logo">
+                <img class="logo-img" src="./10000coders-logo.webp" alt="">
+            </div>
+            <div class="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Why</a></li>
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Employers</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">FAQ</a></li>
+            </div>
+        </div>
+
+        <div class="row-person">
+            <div class="col-text">
+                <p><i style="font-size: 16px; margin: 15px;">All my friends have a cushy, high-paying job. Will I ever get a well-paying  <span style="visibility: hidden;">h</span> IT  job?</i></p>
+                <h2 style="font-weight: 500; margin: 15px;">FEELING HOPELESS THAT YOUR DOOR TO A LUCRATIVE IT JOB IS CLOSED?</h2>
+                <p class="para-2">Never again worry about getting a well-paying IT job. This online training program 
+                    is all you need to get hired by top software companies that you secretly desire to work for. And 
+                    <span>start earning a average of 4 lakh per annum—GUARANTEED!</span></p>
+                    <p class="para-2" style="position: relative; top: 3vh;">Interested?</p>
+                    <button style="position: relative; top: 3vh;">YES! I WANT TO JOIN</button>
+                    <p class="para-2" style="font-weight: bold; font-size: 12px;">So I Can Get A Well-Paying IT Job In 7 Months</p>
+            </div>
+            <div class="col-person">
+                <img class="worried-person-img" src="./worried-person.webp" alt="">
+            </div>
+        </div>
+             
+        <div class="fixed-plugin">
+            <div class="pluin-text">
+                <p style="font-size: 14px;position: relative;top: 2vh;">We're Online!<br>
+                    How may I  help you today?</p>
+
+            </div>
+            <div class="plugin-img">
+                <img class="chat-icon" src="./chatting.png" alt="">
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="row-text">
+                <h2>WHAT YOU’LL LEARN?</h2>
+                <p>THE FRONTEND DEVELOPER 3 MONTHS COURSE MODULES</p>
+            </div>
+            <div class="row-Module">
+                <div class="col1">
+                    <p style="color: green;">Weeks 1-4</p>
+                    <h3>Web Foundation</h3>
+                    <p>HTML, CSS, Bootstrap and Git</p>
+                    <p style="font-weight: bold;">Schedule:</p>
+                    <p>LIVE CLASS : 7 AM to 9 AM IST,
+                        ASSIGNMENTS & MONITORING CALLS : 10 AM TO 5 PM
+                        Monday to Saturday</p>
+                </div>
+                <div class="col2" style="overflow: scroll;">
+                    <p style="color: green;">Weeks 4- 8</p>
+                    <h3> Frontend Development</h3>
+                    <p>JavaScript, Programming fundamentals along with mini projects. Communication Sessions.</p>
+                    <p style="font-weight: bold;">Schedule:</p>
+                    <p>LIVE CLASS : 7 AM to 9 AM IST,
+                        ASSIGNMENTS & MONITORING CALLS : 10 AM TO 5 PM
+                        Monday to Saturday</p>
+                </div>
+                <div class="col3">
+                    <p style="color: green;">Weeks 8-12</p>
+                    <h3> Frontend Development</h3>
+                    <p>React Js, Redux along with mini projects.</p>
+                    <p style="font-weight: bold;">Schedule:</p>
+                    <p>LIVE CLASS : 7 AM to 9 AM IST,
+                        ASSIGNMENTS & MONITORING CALLS : 10 AM TO 5 PM
+                        Monday to Saturday</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
